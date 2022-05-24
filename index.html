@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<title></title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Comentario Juan Manuel Deutsch Corte 3</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link disabled text-white" aria-current="page" href="#">¿Mujeres Graduadas Informaticas 2015 18%?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled text-white" target="_blank" href="#">¿43% de las personas tienen acceso a internet?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled text-white" target="_blank" href="#">¿Hay una brecha tan grande?</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade carousel-dark col-md-6 float-md-end mb-3 ms-md-3" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Imagenes/M1.png" class="d-block w-100 rounded shadow p-3 mb-5 bg-body" height="350" alt="r1">
+    </div>
+    <div class="carousel-item">
+      <img src="Imagenes/M2.jpg" class="d-block w-100 rounded shadow p-3 mb-5 bg-body" height="350" alt="r2">
+    </div>
+    <div class="carousel-item">
+      <img src="Imagenes/M3.jpg" class="d-block w-100 rounded shadow p-3 mb-5 bg-body" height="350" alt="h1">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<p class="h3">
+  ¿Por qué las chicas no les gustan estudiar informática?, ¿Qué tipo de falacias se encuentran en la sociedad frente a esto?
+  La sociedad de hoy en día se ha vuelto menos machista sobre la posición de las mujeres frente a diferentes trabajos presentes, y esto no deja atrás la informática, pero ¿Por qué antes no se veía tanto a las mujeres en la informática? Esta respuesta se llevará a cabo en base a un escrito de ¿Por qué las niñas no quieren ser informáticas? Por Ricardo Pérez [1] y una encuesta llevada por la página de Kobotoolbox para saber el porqué de esta duda.
+
+  <center><iframe src=https://ee.kobotoolbox.org/i/tTq63BHC width="800" height="600"></iframe></center>
+
+  La informática es un universo muy hermoso en donde se aprende de la utilidad y el futuro de ciertas cosas en el mundo, y es parte del gran futuro de la humanidad, pero, es en donde hay mas hombres que mujeres trabajando, perdiéndose gran talento oculto de varios conocimientos que se pueden dar, hay un gran porcentaje de mujeres que eligen otras carreras sobre la informática y esto por lo que escuchan de la carrera, ya sea porque tienen muchas matemáticas o porque la programación es aburrida; es cierto que la matemática es algo complicado para ciertas personas pero no es un obstáculo para poder programar, además que programar es una cosa muy entretenida que hacer, desde solo hacer una bonita pagina web a crear el sistema informático de un carro. Entonces desde un punto de vista propio se puede decir que es por falacias del común que las mujeres no estudian informática, pero ¿que dice la encuesta hecha a estudiantes de informática?
+
+</p>
+
+
+<center><h1>Tablas de resultados</h1></center>
+
+<p class="h3">Porque crees que las personas (Ya sean hombres o mujeres) estudian ingeniería informática</p>
+<p class="lead"> <canvas class="bg-white" id="DataP1" width="300" height="200"> </canvas> </p>
+<br>
+<p class="h3">Porque crees que hay un gran numero de mujeres que no elijen la ingeniería informática como carrera</p>
+<p class="lead"> <canvas class="bg-white" id="DataP2" width="300" height="200"> </canvas> </p>
+<br>
+<p class="h3">Porque crees que las mujeres no se encaminan a trabajar como ingenieras informáticas</p>
+<p class="lead"> <canvas class="bg-white" id="DataP3" width="300" height="200"> </canvas> </p>
+<br>
+<p class="h3">¿Consideras que los padres tienen que ver con la eleccion de gustos de las niñas?</p>
+<p class="lead"> <canvas class="bg-white" id="DataP4" width="300" height="200"> </canvas> </p>
+
+<p>
+  En primera instancia se pregunto “porque se escoge la informática como carrera”, lo que tuvo un porcentaje del 61,11% es porque es una carrera que va a ser muy dependiente en el futuro; muchas empresas en los años que vienen van a requerir de una buena cantidad de ingenieros informáticos para poder hacerle mantenimiento o crear programas los cuales serán automáticos para las empresas, y por inercia misma, todo este trabajo llegará con una recompensa de buen capital
+  En segunda instancia se pregunto “Porque crees que hay un gran número de mujeres que no elijen la ingeniería informática como carrera” y con un porcentaje de un 61,11% se respondió que es por el estereotipo; en el mundo de la informática se encuentra que el estereotipo de una persona que se queda en una silla programando x o y cosa todo el día, pero lo principal es que se dicen que son en especifico hombres, siendo este el estereotipo de una persona que ejerce la informática, pero esto es mentira en gran parte ¿Cierto?
+
+  En tercera instancia se pregunto “porque crees que las mujeres no se encaminan a trabajar como ingenieras informáticas” y con un porcentaje de 38,39% se respondió que a lo largo de la vida les interesaron cosas diferentes; los gustos es algo bastante importante en cuando a la elección de carrera de una persona, las mujeres pueden no encaminarse a la ingeniería informática por gustos personales, ya sea porque les interesa mas el deporte, o los negocios, o el mercadeo, muchas variables que se puede escoger.
+
+  En última instancia se preguntó ”Crees que los padres tienen que ver sobre la elección de los gustos en las niñas” y con un porcentaje de 83,33% se respondió que sí; los padres siempre son muy queridos con sus hijos y siempre les muestran las cosas que a ellos les gustaba en su tiempo a sus hijos, siguiendo antiguamente un estereotipo de que las niñas son de barbies y los niños de carros, hoy en día esto ha cambiado y los padres son mas diversos con las cosas que se les muestran a los niños y niñas y esto podría marcar un futuro diferente.
+
+  Para concluir se puede decir que por muchas variables son las que hay de el porque no hay muchas mujeres en la informática, pero es una variable que ya está cambiando y en un futuro próximo habrá más mujeres en la informática que mostraran sus talentos.
+
+</p>
+
+<section class="filosofia py-4 bg-secondary text-start text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="h2">
+            Referencias
+          </p>
+          <figure class="text-start">
+          <p class="h6">
+            [1] "¿Por qué las niñas no quieren ser informáticas?" The Conversation. https://theconversation.com/por-que-las-ninas-no-quieren-ser-informaticas-179920 (accedido el 23 de mayo de 2022).
+            <br>
+            [2] "About IEEE WIE | IEEE WIE". IEEE WIE. https://wie.ieee.org/aboutieeewie/ (accedido el 23 de mayo de 2022).
+            <br>
+            [3] "Un 43,3 % de la población mundial tiene acceso a internet". www.efe.com. https://www.efe.com/efe/america/tecnologia/un-43-3-de-la-poblacion-mundial-tiene-acceso-a-internet/20000036-2777245#:~:text=Un%2043,3%20%%20de%20la%20población%20mundial,%20unos%203.200,la%20Sociedad%20de%20la%20Información. (accedido el 23 de mayo de 2022).
+            <br>
+            [4] D. Needle. "Estadísticas de mujeres en el mundo de la tecnología". ComputerWeekly.es. https://www.computerweekly.com/es/cronica/Estadisticas-de-mujeres-en-el-mundo-de-la-tecnologia (accedido el 23 de mayo de 2022).
+          </p>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+<script>
+	var ctx=document.getElementById("DataP1").getContext("2d");
+    var DataP1=new Chart(ctx,
+    {
+        type:"bar",
+        data:
+        {
+          labels:['Carrera dependiente en el futuro','Se cobra un 42% mas que la media','Es una profesión en pleno empleo','Por lo que se necesita tanto como el nivel que el humano necesita el agua'],
+          datasets:
+          [{
+            barThickness: 100,
+              label:'% de respuestas',
+                  data:[11,5,1,1],
+                  backgroundColor:
+                  [
+                      'rgb(23, 90, 183,0.7)',
+                      'rgb(23, 183, 104,0.7)',
+                      'rgb(183, 34, 23,0.7)',
+                      'rgb(183, 34, 23,0.7)'
+                  ],
+                  borderColor: 
+                  [
+                    'rgb(0,0,0)',
+                    'rgb(0,0,0)',
+                    'rgb(0,0,0)',
+                    'rgb(0,0,0)'
+                  ],
+                  borderWidth: 2
+          }]
+        },
+        options:
+        {
+          scales:
+          {
+            yAxes:
+            [{
+              ticks:
+              {
+                beginAtZero:true
+              }
+            }]
+        }}
+    });
+
+    var ctx=document.getElementById("DataP2").getContext("2d");
+    var DataP2=new Chart(ctx,
+    {
+        type:"bar",
+        data:
+        {
+          labels:['El esteriotipo','La falta de referentes','Sesgo de genero','Falacias en cuanto las capacidades de las chicas/mujeres'],
+          datasets:
+          [{
+            barThickness: 100,
+              label:'% de respuestas',
+                  data:[11,4,2,1],
+                  backgroundColor:
+                  [
+                      'rgb(23, 90, 183,0.7)',
+                      'rgb(23, 183, 104,0.7)',
+                      'rgb(229, 126, 0,0.7)',
+                      'rgb(183, 34, 23,0.7)'
+                  ],
+                  borderColor: 
+                  [
+                    'rgb(0,0,0)',
+                    'rgb(0,0,0)',
+                    'rgb(0,0,0)',
+                    'rgb(0,0,0)'
+                  ],
+                  borderWidth: 2
+          }]
+        },
+        options:
+        {
+          scales:
+          {
+            yAxes:
+            [{
+              ticks:
+              {
+                beginAtZero:true
+              }
+            }]
+        }}
+    });
+
+    var ctx=document.getElementById("DataP3").getContext("2d");
+    var DataP3=new Chart(ctx,
+    {
+        type:"bar",
+        data:
+        {
+          labels:['A lo largo de su vida les interesaron cosas diferentes','Las personas importantes que reconocen los trabajos programados son sexistas frente al trabajo femenino','Consideran que la informática no es interesante','No les interesa trabajar con personas de sesgos y prejuicios'],
+          datasets:
+          [{
+            barThickness: 100,
+              label:'% de respuestas',
+                  data:[7,5,4,2],
+                  backgroundColor:
+                  [
+                      'rgb(23, 90, 183,0.7)',
+                      'rgb(23, 183, 104,0.7)',
+                      'rgb(229, 126, 0,0.7)',
+                      'rgb(183, 34, 23,0.7)'
+                  ],
+                  borderColor: 
+                  [
+                    'rgb(0,0,0)',
+                    'rgb(0,0,0)',
+                    'rgb(0,0,0)',
+                    'rgb(0,0,0)'
+                  ],
+                  borderWidth: 2
+          }]
+        },
+        options:
+        {
+          scales:
+          {
+            yAxes:
+            [{
+              ticks:
+              {
+                beginAtZero:true
+              }
+            }]
+        }}
+    });
+
+    var ctx=document.getElementById("DataP4").getContext("2d");
+    var DataP4=new Chart(ctx,
+    {
+        type:"polarArea",
+        data:
+        {
+          labels:['Si','No'],
+          datasets:
+          [{
+              label:'% De respuestas',
+                  data:[15,3],
+                  backgroundColor:
+                  [
+                      'rgb(255, 0, 0,0.7)',
+                      'rgb(0, 255, 255,0.7)'                     
+                  ],
+                  borderColor: 
+                  [
+                    'rgb(0,0,0)',
+                    'rgb(0,0,0)'          
+                  ],
+                  borderWidth: 2
+          }]
+        },
+        options:
+        {
+          scales:
+          {
+            yAxes:
+            [{
+              ticks:
+              {
+                beginAtZero:true
+              }
+            }]
+        }}
+    });
+
+
+</script>
+
+</html>
